@@ -15,7 +15,7 @@
 <body>
 	<!-- vuefire and firebase with bulma style -->
 	<div id="app" class="container">
-		<div class="contain-form">
+		<div class="section">
 			<!-- form -->
 			<form id="form" v-on:submit.prevent="addPost">
 				<div class="field">
@@ -49,9 +49,7 @@
 				</div>
 			</form>
 			<!-- // form -->
-		</div>
 		<br>
-		<div class="contain-post">
 	 		<div class="box column user" v-for="user in users" :key="user['.key']" >
 				<article class="media">
 				  <div class="media-left">
